@@ -150,7 +150,7 @@ For any other issues, please contact siddhant.work76@gmail.com
 ## 📱 App Screenshots
 
 ### Featured Products Page
- ![featured-products png](https://github.com/user-attachments/assets/66c7a10a-2c1c-4130-8f62-6c621fb77520)
+ ![featured-products png](https://github.com/user-attachments/assets/66c7a10a-2c1c-4130-8f62-6c621fb77520 | height = 400)
 
 ### Product Details Page
   
