@@ -100,6 +100,29 @@ npm run ios
 3. View estimated delivery date and countdown timer (if applicable)
 4. Check stock availability and delivery provider details
 
+## Testing the Application
+### Accessing the Firebase App Distribution
+1. **Download Link**
+   - Access the app via Firebase App Distribution: **https://appdistribution.firebase.dev/i/dfe2eaeb955b3c69**
+     
+2. **Installation Steps**
+   - Click on the Firebase App Distribution link
+   - Sign in with your Google account if prompted
+   - Accept the invitation to become a tester
+   - Download the APK file for Android or TestFlight link for iOS
+   - Install the application on your device
+     
+3. **Testing Account**
+   - No special testing account is required
+   - The app can be used immediately after installation
+     
+4. **Troubleshooting**
+   - If you encounter installation issues:
+        - Ensure you have enabled installation from unknown sources (Android)
+        - Check if you have accepted the TestFlight invitation (iOS)
+        - Clear browser cache and retry if the download link doesn't work
+          
+For any other issues, please contact siddhant.work76@gmail.com
 
 ## 🤝 Contributing
 
