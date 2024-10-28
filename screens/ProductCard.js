@@ -9,12 +9,21 @@ const CARD_MARGIN = 8;
 // Calculate card width based on screen width, padding, and margins
 const cardWidth = (Dimensions.get('window').width - (SCREEN_PADDING * 2) - (CARD_MARGIN * (NUM_COLUMNS + 1))) / NUM_COLUMNS;
 
-const ProductCard = ({ product, pincodeData }) => {
+/**
+ * A React component that displays a product card with a product name, price, and inStock status.
+ * When the card is pressed, it navigates to the ProductDetails screen with the product details as route params.
+ */
+
+const ProductCard = ({ product }) => {
   const navigation = useNavigation();
   const { productName, price, inStock } = product;
 
+  /**
+   * Handles press on a product card by navigating to the ProductDetails screen
+   * and passing the product details as route params.
+   */
   const handlePress = () => {
-    navigation.navigate("ProductDetails", { productName: productName, price: price });
+    navigation.navigate("ProductDetails", { productName: productName, price: price, inStock: inStock });
   };
 
   return (

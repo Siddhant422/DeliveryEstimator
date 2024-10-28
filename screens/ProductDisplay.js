@@ -9,7 +9,7 @@ import {
   Dimensions,
   StatusBar,
 } from 'react-native';
-import ProductCard from '../components/ProductCard';
+import ProductCard from './ProductCard.js';
 import products from '../assets/Product.js';
 import pincodeData from '../assets/Pincode.js';
 import stocks from '../assets/stock.js';
@@ -31,6 +31,23 @@ const simulateStock = products => {
   }));
 };
 
+/**
+ * ProductDisplay component renders a grid of products with pagination.
+ *
+ * The component takes an array of products and renders a grid of products
+ * with a pagination component at the bottom. The pagination component
+ * displays the current page number and the total number of pages, and allows
+ * the user to navigate between pages by clicking on the left and right
+ * arrow buttons.
+ *
+ * The component also animates the rendering of the products when the page
+ * changes. The animation is a simple translate animation that moves the
+ * products from the bottom of the screen to the top.
+ *
+ * @param {array} products - The array of products to be rendered.
+ * @param {object} pincodeData - The pincode data object.
+ * @returns {object} - The ProductDisplay component.
+ */
 const ProductDisplay = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [displayProducts, setDisplayProducts] = useState([]);
@@ -86,12 +103,21 @@ const ProductDisplay = () => {
     }
   };
 
+/**
+ * Decrements the current page number by one if it is greater than one.
+ * Updates the state to reflect the new current page.
+ */
   const prevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
     }
   };
 
+
+  /**
+   * Renders the header of the product display with a title and subtitle.
+   * The title is "Featured Products" and the subtitle is "Discover our exclusive collection"
+   */
   const renderHeader = () => (
     <View style={styles.header}>
       <View style={styles.headerContent}>
@@ -103,6 +129,13 @@ const ProductDisplay = () => {
     </View>
   );
 
+  /**
+   * Renders a product item. If the item is empty, it renders a
+   * View with the emptyItem style. Otherwise, it renders an
+   * Animated.View with the productContainer style and the translateY
+   * and opacity animations. Inside the Animated.View, it renders a
+   * ProductCard component with the product and pincodeData as props.
+   */
   const renderProductItem = ({ item }) => {
     if (item.isEmpty) {
       return <View style={[styles.productContainer, styles.emptyItem]} />;
@@ -122,6 +155,20 @@ const ProductDisplay = () => {
     );
   };
 
+/**
+ * PaginationArrow is a functional component that renders a touchable arrow button
+ * for pagination. It accepts three props: direction, disabled, and onPress.
+ *
+ * - `direction`: A string that determines the arrow's direction, either 'left' for the
+ *   left arrow or any other value for the right arrow.
+ * - `disabled`: A boolean that determines whether the arrow button is disabled. If true,
+ *   the button is rendered with disabled styles and does not respond to press events.
+ * - `onPress`: A function that is called when the arrow button is pressed, unless the
+ *   button is disabled.
+ *
+ * The component applies specific styles based on the direction and disabled state,
+ * using conditional styling for both the button and the text.
+ */
   const PaginationArrow = ({ direction, disabled, onPress }) => (
     <TouchableOpacity
       style={[styles.pageButton, disabled && styles.pageButtonDisabled]}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "121040710532",
+    "project_id": "deliveryestimator",
+    "storage_bucket": "deliveryestimator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121040710532:android:a5b15942de0a8de45a8bd1",
+        "android_client_info": {
+          "package_name": "com.deliveryestimator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACY3ZUDtZPN7x1Equv73tH0zR7Qeg-HWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
