@@ -100,13 +100,6 @@ npm run ios
 3. View estimated delivery date and countdown timer (if applicable)
 4. Check stock availability and delivery provider details
 
-## ⚙️ Configuration
-
-The application uses several environment variables that need to be set in a `.env` file:
-
-```env
-REACT_APP_FIREBASE_CONFIG=your_firebase_config
-```
 
 ## 🤝 Contributing
 
