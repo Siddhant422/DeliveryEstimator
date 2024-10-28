@@ -156,8 +156,9 @@ For any other issues, please contact siddhant.work76@gmail.com
 
 ### Product Details Page
   
-
-https://github.com/user-attachments/assets/02dcf634-d86e-4877-afdf-4beff38ec92e
+<p align = "center">
+<img src = "https://github.com/user-attachments/assets/02dcf634-d86e-4877-afdf-4beff38ec92e" />
+<p/>
 
 
 
