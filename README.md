@@ -156,7 +156,10 @@ For any other issues, please contact siddhant.work76@gmail.com
 
 ### Product Details Page
 <p align="center">
-  <img src="./product-details.gif.mp4" alt="Product Details Screen" width="300"/>
+ ![featured-products png](https://github.com/user-attachments/assets/66c7a10a-2c1c-4130-8f62-6c621fb77520)
+</p>
+<p align = "center">
+  https://github.com/user-attachments/assets/2ff1d1ea-d490-41e8-8270-60229223d18b
 </p>
 
 ## 📜 License
