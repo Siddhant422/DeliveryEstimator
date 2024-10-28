@@ -1,79 +1,121 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Delivery Estimation App
 
-# Getting Started
+A React Native application for managing product delivery estimates across different logistics providers. The app handles 5000 products and 25000 pincodes, providing real-time delivery date estimates based on logistics provider rules and current time.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## 🌟 Live Demo
 
-## Step 1: Start the Metro Server
+The application is hosted on Firebase and can be accessed at:
+https://appdistribution.firebase.dev/i/dfe2eaeb955b3c69
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## ✨ Features
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- **Product Management**
+  - Browse through 5000 products
+  - Real-time stock availability checking
+  - User-friendly product selection interface
 
+- **Pincode System**
+  - Support for 25000 pincodes
+  - Automatic logistics provider assignment
+  - Pincode validation
+
+- **Delivery Estimation**
+  - Three-tier delivery system:
+    1. Provider A: Same-day delivery (Orders before 5 PM)
+    2. Provider B: Same-day delivery (Orders before 9 AM)
+    3. General Partners: 2-5 days delivery
+  - Real-time countdown timer for same-day delivery
+  - Dynamic delivery date calculation
+
+## 🛠️ Technical Architecture
+
+### Tech Stack
+- React Native
+- Firebase (Hosting)
+- React Navigation for navigating between the screens
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+- React Native development environment setup
+- Android Studio/Xcode for emulators
+
+### Installation
+
+1. Clone the repository
 ```bash
-# using npm
-npm start
+git clone [your-repo-url]
+cd delivery-estimation-app
+```
 
-# OR using Yarn
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server
+```bash
+npm start
+# or
 yarn start
 ```
 
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
+4. Run on Android/iOS
 ```bash
-# using npm
+# For Android
 npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
+# For iOS
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## 📱 Usage
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+1. Select a product from the catalogue
+2. Enter your pincode
+3. View estimated delivery date and countdown timer (if applicable)
+4. Check stock availability and delivery provider details
 
-## Step 3: Modifying your App
+## ⚙️ Configuration
 
-Now that you have successfully run the app, let's modify it.
+The application uses several environment variables that need to be set in a `.env` file:
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+```env
+REACT_APP_FIREBASE_CONFIG=your_firebase_config
+```
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+## 🤝 Contributing
 
-## Congratulations! :tada:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-You've successfully run and modified your React Native App. :partying_face:
+## 📝 Assumptions
 
-### Now what?
+1. **Network Connectivity**
+   - Stable internet connection is available
+   - Basic error handling for network issues
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+2. **Business Rules**
+   - Working hours: 9 AM to 5 PM
+   - Business days: Monday to Friday
+   - Holidays are not considered in delivery calculations
 
-# Troubleshooting
+3. **Data Management**
+   - Product data is relatively static
+   - Pincode-provider mapping doesn't change frequently
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## 📜 License
 
-# Learn More
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-To learn more about React Native, take a look at the following resources:
+## 🙏 Acknowledgments
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- Clinikally for providing the coding challenge
+- React Native community for excellent documentation
+- Firebase team for hosting solutions
