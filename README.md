@@ -34,6 +34,27 @@ https://appdistribution.firebase.dev/i/dfe2eaeb955b3c69
 - Firebase (Hosting)
 - React Navigation for navigating between the screens
 
+## Key Design Decisions
+
+### Component Architecture
+- Modular component-based approach for better code organization and reusability
+- Reusable UI components for consistent design patterns
+- Props validation and TypeScript interfaces for type safety
+
+### UI/UX Design
+- Clean and intuitive user interface
+- Consistent styling across components
+- Loading states and error handling with user-friendly messages
+- Modern design elements with attention to accessibility
+
+### Code Quality
+- Well-documented code with clear comments explaining complex logic
+- Consistent coding style following React Native best practices
+- Proper error handling and edge case management
+- Clean and maintainable code structure
+- Meaningful variable and function naming conventions
+- Efficient state management patterns
+
 ## 🚀 Getting Started
 
 ### Prerequisites
