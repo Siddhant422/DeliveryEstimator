@@ -146,6 +146,18 @@ For any other issues, please contact siddhant.work76@gmail.com
 3. **Data Management**
    - Product data is relatively static
    - Pincode-provider mapping doesn't change frequently
+   
+## 📱 App Screenshots
+
+### Featured Products Page
+<p align="center">
+  <img src="./featured-products.png.jpg" alt="Featured Products Screen" width="300"/>
+</p>
+
+### Product Details Page
+<p align="center">
+  <img src="./product-details.gif.mp4" alt="Product Details Screen" width="300"/>
+</p>
 
 ## 📜 License
 
