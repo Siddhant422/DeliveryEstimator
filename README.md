@@ -157,7 +157,7 @@ For any other issues, please contact siddhant.work76@gmail.com
 ### Product Details Page
   
 <p align = "center">
-<img src = "https://github.com/user-attachments/assets/02dcf634-d86e-4877-afdf-4beff38ec92e" />
+  <img src = "https://github.com/user-attachments/assets/02dcf634-d86e-4877-afdf-4beff38ec92e"  alt="Featured Products" height="400"/>
 <p/>
 
 
