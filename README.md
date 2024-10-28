@@ -150,17 +150,15 @@ For any other issues, please contact siddhant.work76@gmail.com
 ## 📱 App Screenshots
 
 ### Featured Products Page
-<p align="center">
-  <img src="./featured-products.png.jpg" alt="Featured Products Screen" width="300"/>
-</p>
+ ![featured-products png](https://github.com/user-attachments/assets/66c7a10a-2c1c-4130-8f62-6c621fb77520)
 
 ### Product Details Page
-<p align="center">
- ![featured-products png](https://github.com/user-attachments/assets/66c7a10a-2c1c-4130-8f62-6c621fb77520)
-</p>
-<p align = "center">
-  https://github.com/user-attachments/assets/2ff1d1ea-d490-41e8-8270-60229223d18b
-</p>
+  
+
+https://github.com/user-attachments/assets/02dcf634-d86e-4877-afdf-4beff38ec92e
+
+
+
 
 ## 📜 License
 
